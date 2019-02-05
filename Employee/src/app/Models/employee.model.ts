@@ -11,7 +11,11 @@ export class employee {
         public gender?:boolean,
         public qualifications?:boolean,
         public experiences?:boolean,
-        public codes?: boolean,
+        public cplus: boolean= false,
+        public java: boolean= true,
+        public csharp: boolean= true,
+        public php: boolean= false,
+        public python: boolean= false,
     ) {
 
     }

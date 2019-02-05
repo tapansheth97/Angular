@@ -1,0 +1,31 @@
+<div id="mainDiv">
+<div>
+  <span class="heading">Employee List</span>
+  <input type="button" class="btn btn-info" (click)="onAdd()" value="+ Add Employee" />
+</div>
+<div id="empData" *ngFor="let employee of employees">
+  <table>
+    <tr>Name : {{employee.fname + " " +employee.lname}}</tr>
+    <tr>Email : {{employee.email}}</tr>
+    <tr>Contact : {{employee.contact}}</tr>
+    <tr>Address: {{employee.address}}</tr>
+    <tr>Username : {{employee.uname}}</tr>
+    <tr>Password : {{employee.pass}}</tr>
+    <tr>Gender : {{employee.gender}}</tr>
+    <tr>Qualification : {{employee.qualification}}</tr>
+    <tr>Experience : {{employee.experience}}</tr>
+    <tr>Coding Language : <br>
+      C/C++ : {{employee.cplus}} <br>
+      Java : {{employee.java}} <br>
+      C# : {{employee.csharp}} <br>
+      PHP : {{employee.php}} <br>
+      Python : {{employee.python}} <br>
+    </tr>
+  </table>
+  <div>
+    <input type="button" class="btn btn-info" (click)="onEdit(employee.uname)" value="Edit" /> &nbsp;
+    <input type="button" class="btn btn-info" (click)="onDelete(employee.uname)" value="Delete" />
+  </div>
+</div>
+</div>
+ 
