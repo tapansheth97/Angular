@@ -25,7 +25,8 @@ export class EmployeeDataService {
       csharp : false,
       php : true,
       python : true
-    },
+    }
+    ]
    
 
   getEmployees() {
